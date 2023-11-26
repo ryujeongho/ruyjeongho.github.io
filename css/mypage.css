@@ -1,11 +1,176 @@
-#container {
-    background-color: #f0f0f0;
-    width: 1100px;
-    margin: 0 auto;
+
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Gowun+Dodum&family=Hi+Melody&family=Kdam+Thmor+Pro&family=Nanum+Pen+Script&family=Roboto+Slab&family=Rubik&family=Single+Day&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+.left{
+    position: absolute;
+    width: 50%;
+    height: 100px;
+    float: left;
+    background-color: rgb(255, 260, 252);
+    z-index: 100;
+}
+.right{
+    position: relative;
+    background-color: rgb(255, 260, 252);
+    width: 50%;
+    height: 100px;
+    float: right;
+    z-index: 100;
+}
+.right ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    transform: translateY(30px);
+}
+.right ul li a {
+    font-weight: lighter;
+    color: black;
+    text-decoration: none;
+    font-family: 'Single Day', cursive;
+}
+.right ul li a:hover {
+    color: rgb(70, 70, 255);
 }
 
-#header { 
-    background-image: url('/images/pic01.jpg'); 
-    height: 300px; 
+.left span {
+    color: black;
+    font-size: 0.9rem;
+    font-family: 'Single Day', cursive;
+}
+.logo a {
+    text-decoration: none;
+}
+.logo {
+    display: inline-block;
+    height: inherit;
+    left: 1.25rem;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    height: 10px;
+    transform: translate(0, 30px);
+}
+#main-section {
+    position: absolute;
+    background-color: rgb(198, 216, 255);
+    width: 40%;
+    height: 800px;
+    float: left;
+    transform: translateY(100px);
+}
+#main-aside {
+    background-color: rgb(255, 260, 252);
+    width: 60%;
+    height: 800px;
+    float: right;
+}
+#main-footer {
+    background-color: rgb(255, 260, 252);
+    clear: both;
+    text-align: center;
+    padding-top: 100px;
+}
+.sub-wrap {
+    position: relative;
+    width: 50%;
+    height: 530px;
+    bottom: -170px;
+    left: 260px;
+}
+#box {
+    width: 380px;
+    height: 530px;
+    background-color: rgb(208, 220, 247);
+    top: 200px;
+    right: 1100px;
+    box-shadow: 0 35px 77px -17px;
+    /* visibility: hidden; */
+}
+
+#box #mini-box {
+    position: absolute;
+    top: 530px;
+    width: 380px;
+    height: 53px;
+    background-color: rgb(255, 260, 252, 0.9);
+}
+#box #img {
+    position: absolute;
+    width: 205px;
+    height: 205px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: url(/images/다운로드.jpeg);
     background-size: cover;
+    top: 70px;
+    left: 85px;
+}
+#mini-box #icon {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    transform: translate(-24px, -7px);
+}
+/* .content #main-aside h1{
+    position: relative;
+    top: 100px;
+    left: 90px;
+    font-size: 100px;
+    width: 50%
+} */
+#main-aside span {
+    position: relative;
+    font-size: 50px;
+    left: 100px;
+    bottom: -380px;
+    font-family: 'Nanum Pen Script', cursive;
+    width: 50%;
+    text-shadow: 0 35px 77px -17px;
+    -webkit-text-stroke: 1px rgb(208, 220, 247);
+}
+@keyframes fadein {
+    /* 효과를 동작시간 동안 0 ~ 1까지 */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+}
+#box {
+    /* animation : 효과(@keyframes 이름) 동작시간 */
+        animation: fadein 3s;
+}
+#main-aside {
+    /* animation : 효과(@keyframes 이름) 동작시간 */
+        animation: fadein 1.9s;
+}
+#box h2 {
+    position: absolute;
+    transform: translate(110px, 300px);
+    -webkit-text-stroke: 1px rgb(208, 220, 247);
+}
+#box #line {
+    width: 150px;
+    border: 1px solid rgb(98, 98, 228);
+    transform: translate(110px, 380px);
+}
+#box p {
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-family: 'Nanum Brush Script', cursive;
+    font-style: italic;
+    transform: translate(100px, 400px);
+    -webkit-text-stroke: 0.3px #b6a5ea;
 }

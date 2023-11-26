@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Gowun+Dodum&family=Hi+Melody&family=Kdam+Thmor+Pro&family=Nanum+Pen+Script&family=Roboto+Slab&family=Rubik&family=Single+Day&display=swap');
+
 body, html {
     margin: 0;
     padding: 0;
 }
 .wrap {
-    width: 100%;
-    height: 120px;
+    width: 100vw;
+    height: 12vh;
     position: relative;
 }
 .left{
@@ -14,11 +16,6 @@ body, html {
     float: left;
     background-color: rgb(255, 260, 252);
     z-index: 100;
-}
-.box {
-    width: 16px;
-    height: 16px;
-    background-color: blue;
 }
 .right{
     position: relative;
@@ -43,6 +40,7 @@ body, html {
 .right ul li a:hover {
     color: rgb(70, 70, 255);
 }
+
 .left span {
     color: black;
     font-size: 0.9rem;
@@ -65,6 +63,7 @@ body, html {
 }
 #main-section {
     background-color: rgb(198, 216, 255);
+    /* background: linear-gradient(90deg, rgba(53,173,245,1) 0%, rgba(9,9,121,1) 48%, rgba(0,212,255,1) 100%); */
     width: 40%;
     height: 800px;
     float: left;
@@ -81,16 +80,23 @@ body, html {
     text-align: center;
     padding-top: 100px;
 }
+.sub-wrap {
+    position: relative;
+    width: 50%;
+    height: 530px;
+    bottom: -170px;
+    left: 260px;
+}
 #box {
-    display: block;
-    position: absolute;
     width: 380px;
     height: 530px;
     background-color: rgb(208, 220, 247);
     top: 200px;
-    right: 800px;
+    right: 1100px;
     box-shadow: 0 35px 77px -17px;
+    /* visibility: hidden; */
 }
+
 #box #mini-box {
     position: absolute;
     top: 530px;
@@ -120,10 +126,12 @@ body, html {
     top: 100px;
     left: 90px;
     font-size: 100px;
+    width: 50%
 }
 #main-aside span {
     position: relative;
     font-size: 90px;
     left: 100px;
     font-family: 'Single Day', cursive;
+    width: 50%
 }

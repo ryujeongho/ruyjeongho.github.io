@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Gowun+Dodum&family=Hi+Melody&family=Kdam+Thmor+Pro&family=Nanum+Pen+Script&family=Roboto+Slab&family=Rubik&family=Single+Day&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    width: 100vw;
+    height: 12vh;
+    position: relative;
+}
+.left{
+    position: relative;
+    width: 50%;
+    height: 100px;
+    float: left;
+    background-color: rgb(255, 260, 252);
+    z-index: 100;
+}
+.right{
+    position: relative;
+    background-color: rgb(255, 260, 252);
+    width: 50%;
+    height: 100px;
+    float: right;
+    z-index: 100;
+}
+.right ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    transform: translateY(30px);
+}
+.right ul li a {
+    font-weight: lighter;
+    color: black;
+    text-decoration: none;
+    font-family: 'Single Day', cursive;
+}
+.right ul li a:hover {
+    color: rgb(70, 70, 255);
+}
+
+.left span {
+    color: black;
+    font-size: 0.9rem;
+    font-family: 'Single Day', cursive;
+}
+.logo a {
+    text-decoration: none;
+}
+.logo {
+    display: inline-block;
+    height: inherit;
+    left: 1.25rem;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    height: 10px;
+    transform: translate(0, 30px);
+}
+#main-section {
+    width: 100%;
+    height: 750px;
+}
+#text-box1 {
+    position: relative;
+    width: 330px;
+    height: 530px;
+    border: 1px solid rgb(198, 216, 255);
+    transform: translate(40px, 170px);
+}
+#text-box2 {
+    position: relative;
+    width: 330px;
+    height: 530px;
+    border: 1px solid rgb(198, 216, 255);
+    transform: translate(378px, -362px);
+}
+#text-box3 {
+    position: relative;
+    width: 330px;
+    height: 530px;
+    border: 1px solid rgb(198, 216, 255);
+    transform: translate(716px, -894px);
+}
+#text-box4 {
+    position: relative;
+    width: 330px;
+    height: 530px;
+    border: 1px solid rgb(198, 216, 255);
+    transform: translate(1054px, -1426px);
+}
+#icon-box1 {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    background-image: url(/images/free-icon-lightbulb-3459013.png);
+    left: 120px;
+    bottom: 40px;
+}
+#icon-box1+h2{
+    transform: translateY(-15px);
+}
+#icon-box1+h2+ul{
+    transform: translateY(-15px);
+}
+#icon-box2 {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    background-image: url(/images/free-icon-notebook-3459121.png);
+    left: 120px;
+    bottom: 40px;
+}
+#icon-box3 {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    background-image: url(/images/free-icon-test-3459470\ \(1\).png);
+    left: 120px;
+    bottom: 40px;
+}
+#icon-box4 {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    background-image: url(/images/free-icon-laptop-3459283.png);
+    left: 120px;
+    bottom: 40px;
+}
