@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Gowun+Dodum&family=Hi+Melody&family=Kdam+Thmor+Pro&family=Nanum+Pen+Script&family=Roboto+Slab&family=Rubik&family=Single+Day&display=swap');
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+.left{
+    position: absolute;
+    width: 50%;
+    height: 100px;
+    float: left;
+    background-color: rgb(255, 260, 252);
+    z-index: 100;
+}
+.right{
+    position: relative;
+    background-color: rgb(255, 260, 252);
+    width: 50%;
+    height: 100px;
+    float: right;
+    z-index: 100;
+}
+.right ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    transform: translateY(30px);
+}
+.right ul li a {
+    font-weight: lighter;
+    color: black;
+    text-decoration: none;
+    font-family: 'Single Day', cursive;
+}
+.right ul li a:hover {
+    color: rgb(70, 70, 255);
+}
+
+.left span {
+    color: black;
+    font-size: 0.9rem;
+    font-family: 'Single Day', cursive;
+}
+.logo a {
+    text-decoration: none;
+}
+.logo {
+    display: inline-block;
+    height: inherit;
+    left: 1.25rem;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    height: 10px;
+    transform: translate(0, 30px);
+}
+#outer {
+    position: relative;
+    width: 100vw;
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+}
+#membership-box {
+    background-color: rgb(198, 216, 255, 0.4);
+    border-radius: 10%;
+    /* border: 1px solid black; */
+    position: absolute;
+    width: 700px;
+    height: 87vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 5px gray;
+    text-align: center;
+}
+#tb-member {
+    padding: 5px;
+}
+th {
+    width: 200px;
+    text-align: center;
+    padding: 10px 0;
+    height: 40px;
+    font-weight: 600;
+    font-family: 'Hi Melody', sans-serif;
+    font-size: 21px;
+}
+td {
+    font-weight: 600;
+    font-family: 'Hi Melody', sans-serif;
+    font-size: 21px;
+}

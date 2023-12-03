@@ -18,8 +18,8 @@
                         <li ><a href="/mypage.html" id="click">Mypage</a></li>
                         <li><a href="/tour.html">Tour</a></li>
                         <li><a href="/roadmap.html">Roadmap</a></li>
-                        <li><a href="#">Membership</a></li>
-                        <li><a href="#">Member</a></li>
+                        <li><a href="/membership.html">Membership</a></li>
+                        <li><a href="/member.html">Member</a></li>
                     </ul>
                 </nav>
             </div>            
@@ -33,6 +33,35 @@
             </aside>
             
         </div>
+
+        <div class="modal">
+            <div class="modal_body">
+                <div class="close"></div>
+                <table>
+                    <tr>
+                        <th>이름</th>
+                        <td>유정호</td>
+                    </tr>
+                    <tr>
+                        <th>생일</th>
+                        <td>1993년 3월 26일</td>
+                    </tr>
+                    <tr>
+                        <th>나이</th>
+                        <td>31세</td>
+                    </tr>
+                    <tr>
+                        <th>취미</th>
+                        <td>독서</td>
+                    </tr>
+                    <tr>
+                        <th>사는곳</th>
+                        <td>서울시 성북구 미아동</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
         <div class="sub-wrap">
             <div id="box" > 
                 <h2>Ryu Jeongho</h2>
@@ -50,5 +79,17 @@
         </div>
         <footer id="main-footer"></footer>
     </div>
+    <script>
+        const modal = document.querySelector(".modal");
+        const click = document.querySelector("#img");
+        const close = document.querySelector(".close");
+        click.addEventListener('click', () => {
+            modal.style.display = "flex";
+        })
+        close.addEventListener('click', () => {
+            modal.style.display = "none";
+        })
+
+    </script>
 </body>
 </html>

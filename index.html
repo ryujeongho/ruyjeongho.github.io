@@ -18,8 +18,8 @@
                         <li ><a href="/mypage.html" id="click">Mypage</a></li>
                         <li><a href="/tour.html">Tour</a></li>
                         <li><a href="/roadmap.html">Roadmap</a></li>
-                        <li><a href="#">Membership</a></li>
-                        <li><a href="#">Member</a></li>
+                        <li><a href="/membership.html">Membership</a></li>
+                        <li><a href="/member.html">Member</a></li>
                     </ul>
                 </nav>
             </div>            
@@ -34,7 +34,8 @@
         </div>
         
         <div class="sub-wrap">
-            <div id="box" >
+            <div id="box">
+                <span id="clock-display"></span>
                 <div id="img"></div>
                     <div id="mini-box">
                         <ul id="icon">
@@ -47,5 +48,20 @@
         </div>
         <footer id="main-footer"></footer>
     </div>
+    <script>
+        const f = (n) => n < 10 ? '0' + n : n;
+        const clock = () => {
+            const d = new Date();
+            const hh = f(d.getHours());
+            const mm = f(d.getMinutes());
+            const ss = f(d.getSeconds());
+            console.log(`${hh}:${mm}:${ss}`);
+            return `${hh}:${mm}:${ss}`;
+        };
+
+        const displayClock = () => document.querySelector('#clock-display').innerHTML = clock();
+        displayClock(); // 처음부터 화면에 띄우기 위해서 실행
+        setInterval(displayClock, 1000); // 그 이후에 1초마다 실행
+    </script>
 </body>
 </html>

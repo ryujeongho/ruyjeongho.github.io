@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership</title>
+    <link rel="stylesheet" href="css/membership.css">
+</head>
+<body>
+    <div class="wrap">
+        <header id="main-header">
+            <div class="left"> 
+                <div class="logo"><a href="index.html"><img src="images/free-icon-font-cube-5528180.png" alt=""> <span>by ryujeongho</span></a></div>
+            </div> 
+            <div class="right">
+                <nav id="main-navi">
+                    <ul>
+                        <li ><a href="/mypage.html" id="click">Mypage</a></li>
+                        <li><a href="/tour.html">Tour</a></li>
+                        <li><a href="/roadmap.html">Roadmap</a></li>
+                        <li><a href="/membership.html">Membership</a></li>
+                        <li><a href="/member.html">Member</a></li>
+                    </ul>
+                </nav>
+            </div>            
+        </header>
+    </div>  
+
+    <div id="outer">
+        <div id="membership-box">
+            <form action="javascript:saveSignup();" name="signupFrm" id="signupFrm">
+                <table>
+                    <tr>
+                    <th><label for="id">아이디</label></th>
+                    <td>
+                        <input type="text" id="id" name="id" 
+                        placeholder="영문자/숫자 포함 8-12자리" 
+                        onfocus="this.placeholder = ''" 
+                        onblur="this.placeholder = '영문자/숫자 포함 8-12자리'" size="30px">
+                    </td>
+                    </tr>
+                    <tr>
+                    <th><label for="password">패스워드</label></th>
+                    <td>
+                        <input type="password" id="password" name="password"
+                        placeholder="영문자/숫자/특수문자 포함 8-12자리" 
+                        onfocus="this.placeholder = ''" 
+                        onblur="this.placeholder = '영문자/숫자/특수문자 포함 8-12자리'" size="30px">
+                    </td>
+                    </tr>
+                    <tr>
+                    <th><label for="password-check">패스워드 확인</label></th>
+                    <td>
+                        <input type="password" id="password-check"
+                        placeholder="필수 입력" 
+                        onfocus="this.placeholder = ''" 
+                        onblur="this.placeholder = '필수 입력'" size="30px">
+                    </td>
+                    </tr>
+                    <tr>
+                    <th><label for="email">이메일</label></th>
+                    <td>
+                        <input type="text" id="email" name="email"
+                        placeholder="필수 입력" 
+                        onfocus="this.placeholder = ''" 
+                        onblur="this.placeholder = '필수 입력'" size="30px">
+                    </td>
+                    </tr>
+                    <tr>
+                    <th><label for="address">주소</label></th>
+                    <td>
+                        <input type="text" id="address"
+                        placeholder="필수 입력" 
+                        onfocus="this.placeholder = ''" 
+                        onblur="this.placeholder = '필수 입력'" size="30px">
+                    </td>
+                    </tr>
+                    <tr>
+                    <th colspan="2">
+                        <input type="submit" value="가 입">
+                    </th>
+                </tr>
+                </table>
+                </form>      
+        </div>
+    </div>
+    
+    <script src="js/membership.js"></script>
+</body>
+</html>

@@ -90,15 +90,13 @@ body, html {
     left: 260px;
 }
 #box {
+    position: absolute;
     width: 380px;
     height: 530px;
     background-color: rgb(208, 220, 247);
-    top: 200px;
-    right: 1100px;
+    right: 370px;
     box-shadow: 0 35px 77px -17px;
-    /* visibility: hidden; */
 }
-
 #box #mini-box {
     position: absolute;
     top: 530px;
@@ -116,6 +114,7 @@ body, html {
     background-size: cover;
     top: 70px;
     left: 85px;
+    cursor: pointer;
 }
 #mini-box #icon {
     display: flex;
@@ -123,13 +122,6 @@ body, html {
     justify-content: space-evenly;
     transform: translate(-24px, -7px);
 }
-/* .content #main-aside h1{
-    position: relative;
-    top: 100px;
-    left: 90px;
-    font-size: 100px;
-    width: 50%
-} */
 #main-aside span {
     position: relative;
     font-size: 50px;
@@ -168,9 +160,53 @@ body, html {
     transform: translate(110px, 380px);
 }
 #box p {
-    /* font-family: 'Noto Sans', sans-serif; */
-    font-family: 'Nanum Brush Script', cursive;
     font-style: italic;
-    transform: translate(100px, 400px);
+    transform: translate(113px, 400px);
     -webkit-text-stroke: 0.3px #b6a5ea;
+}
+.modal{
+    position:absolute;
+    display:none;
+    justify-content: center;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.modal_body{
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    top:450px;
+    width:400px;
+    height:600px;
+    padding:10px;  
+    text-align: center;
+    background-color: rgba(247, 244, 244, 0.9);
+    border-radius:10px;
+    box-shadow:0 2px 3px 0 rgba(34,36,38,0.15);
+    transform:translateY(-50%);
+    z-index: 999;
+    border: 1px solid black;
+}
+.close {
+    cursor: pointer;
+    background-image: url('/images/free-icon-close-8373819.png');
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 10px;
+    left: 375px;
+    z-index: 1000;
+}
+.modal_body table {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    background-color:  rgb(212, 225, 255);
+    border-radius: 10px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+th, tr, td {
+    font-size: 25px;
 }

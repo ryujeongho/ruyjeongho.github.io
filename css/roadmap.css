@@ -61,37 +61,59 @@ body, html {
     height: 10px;
     transform: translate(0, 30px);
 }
-#main-section {
+/* #main-section {
     width: 100%;
     height: 750px;
+} */
+.content {
+    position: relative;
 }
 #text-box1 {
     position: relative;
     width: 330px;
     height: 530px;
     border: 1px solid rgb(198, 216, 255);
-    transform: translate(40px, 170px);
+    transform: translate(255px, 170px);
+    animation: bounce 2s infinite;
+    font-family: 'Hi Melody', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
 }
 #text-box2 {
     position: relative;
     width: 330px;
     height: 530px;
     border: 1px solid rgb(198, 216, 255);
-    transform: translate(378px, -362px);
+    transform: translate(603px, -362px);
+    animation: bounce 2s infinite;
+    animation-delay: 1s;
+    font-family: 'Hi Melody', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
 }
 #text-box3 {
     position: relative;
     width: 330px;
     height: 530px;
     border: 1px solid rgb(198, 216, 255);
-    transform: translate(716px, -894px);
+    transform: translate(950px, -894px);
+    animation: bounce 2s infinite;
+    animation-delay: 2s;
+    font-family: 'Hi Melody', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
 }
 #text-box4 {
     position: relative;
     width: 330px;
     height: 530px;
     border: 1px solid rgb(198, 216, 255);
-    transform: translate(1054px, -1426px);
+    transform: translate(1295px, -1426px);
+    animation: bounce 2s infinite;
+    animation-delay: 3s;
+    font-family: 'Hi Melody', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
 }
 #icon-box1 {
     position: relative;
@@ -130,4 +152,19 @@ body, html {
     background-image: url(/images/free-icon-laptop-3459283.png);
     left: 120px;
     bottom: 40px;
+}
+.text-box {
+    box-shadow: 0 25px 33px -22px;
+}
+
+@keyframes bounce {
+    0% {
+        top: -10px
+    }
+    50% {
+        top: 10px;
+    }
+    100% {
+        top: -10px
+    }
 }
