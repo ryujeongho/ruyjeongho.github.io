@@ -48,7 +48,6 @@ document.signupFrm.onsubmit = () => {
         return false;
     }
 
-    // saveSignup();
     
     alert("회원가입 완료!!");
     
@@ -70,7 +69,6 @@ function isEqualPwd() {
 const saveSignup = () => {
     const members = JSON.parse(localStorage.getItem('members')) || [];
     members.push(new Member(id.value, password.value, email.value, address.value));
-    console.log(members);
 
     localStorage.setItem('members', JSON.stringify(members));
 

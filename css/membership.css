@@ -118,3 +118,6 @@ input {
     margin: 10px;
     background: transparent;
 }
+#btn {
+    cursor: pointer;
+}
